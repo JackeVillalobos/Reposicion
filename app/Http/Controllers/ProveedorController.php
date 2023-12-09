@@ -22,6 +22,7 @@ class ProveedorController extends Controller
         $proveedor->nombre = $request->input("nombre");
         $proveedor->fechaRegistro = $request->input("fechaRegistro");
         $proveedor->telefono = $request->input("telefono");
+         $proveedor->correo = $request->input("correo");
         $proveedor->save();
         
         return redirect('proveedore.index');
