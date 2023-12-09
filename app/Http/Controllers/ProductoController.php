@@ -19,12 +19,12 @@ class ProductoController extends Controller
 
     public function store(Request $request){
         $producto= new Producto();
-        $productoproducto->id = $request->input("id");
+        $producto->id = $request->input("id");
         $producto->descripcion = $request->input("descripcion");
         $producto->precio = $request->input("precio");
         $producto->stock = $request->input("stock");
         $producto->pagaIsv = $request->input("pagaIsv");
-        $empleado->save();
+        producto->save();
         
         return redirect('empleado.index');
     }
