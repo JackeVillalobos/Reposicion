@@ -42,8 +42,3 @@ Route::get('/proveedore', [ProveedorController::class, 'index'])->name('proveedo
 Route::get('/proveedore/crear', [ProveedorController::class, 'create'])->name('proveedore.crear');
 
 Route::post('/proveedore/guardar', [ProveedorController::class, 'store'])->name('proveedore.store');
-
-
-Route::get('/proveedor', [ProveedorController::class, 'index'])->name('proveedor.index');
-Route::get('/producto/save', [ProveedorController::class, 'create'])->name('proveedor.save');
-Route::post('/producto/create', [ProveedorController::class, 'create'])->name('proveedor.create');
