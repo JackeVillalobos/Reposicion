@@ -24,6 +24,6 @@ class ProveedorController extends Controller
         $proveedor->telefono = $request->input("telefono");
         $proveedor->save();
         
-        return redirect('proveedor.index');
+        return redirect('proveedore.index');
     }
 }
