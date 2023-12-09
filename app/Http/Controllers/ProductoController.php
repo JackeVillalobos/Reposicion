@@ -9,7 +9,7 @@ use App\Models\Producto;
 class ProductoController extends Controller
 {
     public function index(){
-        $productos = Empleado::all();
+        $productos = Producto::all();
         return view('productos', compact('productos'));
     }
 
