@@ -26,7 +26,7 @@ class EmpleadoController extends Controller
         $empleado->salario = $request->input("salario");
         $empleado->save();
         
-        return redirect('empleado.inicio');
+        return redirect('empleado.index');
     }
 
 }
