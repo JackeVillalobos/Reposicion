@@ -9,7 +9,7 @@ use App\Models\Empleado;
 class EmpleadoController extends Controller
 {
     public function index(){
-        $empleado = Empleado::all();
+        $empleados = Empleado::all();
         return view('empleado', compact('empleado'));
     }
 
