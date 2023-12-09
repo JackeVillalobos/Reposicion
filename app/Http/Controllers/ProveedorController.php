@@ -8,8 +8,8 @@ use App\Models\Proveedor;
 class ProveedorController extends Controller
 {
     public function index(){
-        $proveedor = Empleado::all();
-        return view('proveedore', compact('proveedor'));
+        $proveedor = Proveedor::all();
+        return view('proveedore', compact('proveedore'));
     }
 
     public function create(){
@@ -24,6 +24,6 @@ class ProveedorController extends Controller
         $proveedor->telefono = $request->input("telefono");
         $proveedor->save();
         
-        return redirect('empleado.inicio');
+        return redirect('proveedor.index');
     }
 }
