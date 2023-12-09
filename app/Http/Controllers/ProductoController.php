@@ -26,6 +26,6 @@ class ProductoController extends Controller
         $producto->pagaIsv = $request->input("pagaIsv");
         producto->save();
         
-        return redirect('empleado.index');
+        return redirect('producto.index');
     }
 }
